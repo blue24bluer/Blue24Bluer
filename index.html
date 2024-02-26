@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blue24Bluer</title>
+  <link rel="stylesheet" href="st.css">
+  <link rel="stylesheet" href="button.css">
+  <link rel="preload" href="font/Almarai.woff2" as="font" type="font/woff2" crossorigin>
+
+        <!-- Favicon -->
+    <link rel="icon" href="https://instawebeustorage01.blob.core.windows.net/websites-co-in-users-files/files/839378/favicon/favicon.png?v=77144891" type="image/png" />
+
+        <!-- Google font -->
+        <link rel="preload" as="font"href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" onload="this.rel='stylesheet'">
+        <link rel="preload" as="font"href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" onload="this.rel='stylesheet'">
+        <!-- BS4 minified v1.0.0 CSS -->
+        <link rel="stylesheet" href="udyog/css/bootstrap.min9caf.css?v=2030530230">
+        <!-- Custom minified CSS -->
+        <link rel="stylesheet" href="udyog/css/custom.min5e77.css?v=445896734">
+
+
+
+        <link rel="stylesheet" href="udyog/css/ecommerce.min4166.css?v=982744943">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.7.0/css/flag-icons.min.css">
+
+        <link media="none" onload="if(media!='all')media='all'"rel="stylesheet" href="common/css/custom-toast.css">
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="udyog/fonts/css/all.min.css">
+
+        <!-- Select2 css files -->
+        <link media="none" onload="if(media!='all')media='all'"href="common/css/select2.min.css" rel="stylesheet" />
+
+        <!-- animate.css -->
+        <link media="none" onload="if(media!='all')media='all'"href="common/css/animate.css" rel="stylesheet" />
+
+        <!-- manifest request -->
+        <link rel="manifest" href="manifest17de.json?theme_color=%230c0c0c">
+
+        <link rel="canonical" href="index-2.html">
+
+        <link rel="alternate" href="index.html" hreflang="en-us">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+
+    <link rel="stylesheet" href="udyog/slick/slick.css">
+                <!-- Dynamic styles -->
+
+  <style>
+  body {
+    background-image: url('Back.jpg');
+    background-repeat: no-repeat;
+    font-family: 'Almarai', Arial, sans-serif;
+    background-size: cover;
+}
+
+  </style>
+
+<script>
+  function showLoadingPage(event) {
+    event.preventDefault(); // منع الانتقال إلى الصفحة المحددة فورًا
+
+    var loadingPage = document.createElement("div");
+    loadingPage.id = "loading-page";
+
+    var loadingText = document.createElement("p");
+    loadingText.textContent = "جارٍ التحميل...";
+    loadingPage.appendChild(loadingText);
+
+    document.body.appendChild(loadingPage);
+
+    setTimeout(function() {
+      loadingPage.style.display = "none"; // إخفاء صفحة التحميل والانتظار بعد مرور الوقت المحدد
+      window.location.href = event.target.href; // الانتقال إلى الصفحة المحددة بعد انتهاء صفحة التحميل والانتظار
+    }, 120000); // 120000 ميلي ثانية تعادل دقيقتين
+  }
+
+  var buttons = document.getElementsByClassName("dialog-box");
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", showLoadingPage);
+  }
+
+    document.addEventListener("DOMContentLoaded", (event) => {
+    // Create a script element
+    const customScript = document.createElement('script');
+
+    // Set the script content with your logic
+    customScript.textContent = `
+                    let db_colors = {"primary":"#e6b52f","secondary":"#252525","hover_primary":"#b38916","hover_secondary":"#252525"};
+            if (db_colors) {
+                applyColors(db_colors);
+            }
+                window.addEventListener('message', function (event) {
+            let preview_color = null;
+            //
+            if (event.origin !== "https://websites.co.in/") return;
+            //
+            if (event?.data?.colors) {
+                preview_color = event.data.colors;
+                applyColors(preview_color);
+            }
+        },false);
+
+        function handleTemplateStyleDataFromAndroid(data) {
+            let preview_color_android = null;
+            //
+            //
+            //
+            try {
+                    const parsedData = JSON.parse(data);
+                    if (parsedData?.colors) {
+                        preview_color_android = parsedData.colors;
+                        applyColors(preview_color_android);
+                    }
+                } catch (error) {
+                    console.error('Error parsing JSON data:', error);
+                }
+        }
+
+        function applyColors(colors){
+            // array to store CSS variable declarations
+            // Add primary color
+            const cssVariables = [];
+            if (colors.primary) {
+                cssVariables.push(\`--primary: \${colors.primary} !important;\`);
+                cssVariables.push(\`--hover_primary: \${colors.hover_primary || colors.primary} !important;\`);
+            }
+
+            // Add secondary color
+            if (colors.secondary) {
+                cssVariables.push(\`--secondary: \${colors.secondary} !important;\`);
+                cssVariables.push(\`--hover_secondary: \${colors.hover_secondary || colors.secondary} !important;\`);
+            }
+            // Join the array into a string and update CSS variables
+            document.getElementById('custom_style_customizations').textContent = \` :root {
+                \${cssVariables.join('\\n')}
+            } \`;
+        }
+    `;
+
+    // Append the script element to the body
+    document.body.appendChild(customScript);
+});
+
+
+</script>
+<script src="wind.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="logo wind-effect">
+      <img src="Blue.jpg" alt="Blue24Bluer_ico">
+    </div>
+    <h1 class="wind-effect">Blue24Bluer</h1>
+    <p class="wind-effect">نحن نقدم الخدمات التالية:</p>
+    <div class="contact">
+      <ul>
+        <li><a class="dialog-box wind-effect" href="service1.html">اختبار الاختراق</a></li>
+        <li><a class="dialog-box wind-effect" href="service2.html">استرداد البيانات</a></li>
+        <li><a class="dialog-box wind-effect" href="service3.html">تحليل البرامج الضارة</a></li>
+        <li><a class="dialog-box wind-effect" href="service4.html">استخراج البيانات</a></li>
+        <li><a class="dialog-box wind-effect" href="service5.html">أمان الشبكة والنظام</a></li>
+        <li><a class="dialog-box wind-effect" href="service6.html">اختبار الهندسة الاجتماعية</a></li>
+        <li><a class="dialog-box wind-effect" href="service7.html">حل مشاكل الابتزاز</a></li>
+        <li><a class="dialog-box wind-effect" href="service8.html">حل مشاكل البرمجة</a></li>
+        <li><a class="dialog-box wind-effect" href="service9.html">شراء البرمجيات الخبيثة</a></li>
+        <li><a class="dialog-box wind-effect" href="service10.html">تقديم دورات BlackHat</a></li>
+      </ul>
+    </div>
+    <div class="contact">
+      <h3 class="wind-effect">تواصل معنا:</h3>
+      <a class="dialog-box wind-effect" href="tel:967774556367">Phone</a>
+      <a class="dialog-box wind-effect" href="mailto:blue24bluer@gmail.com">Email</a>
+    </div>
+    <div class="contact">
+      <h3 class="wind-effect">تابعنا على وسائل التواصل الاجتماعي:</h3>
+    </div>
+    <div class="social-media">
+<a class="dialog-box" href="https://www.instagram.com/blue24bluer">Instagram</a>
+      <a class="dialog-box" href="https://www.facebook.com/blue24bluer">Facebook</a>
+      <a class="dialog-box" href="https://t.me/blue24bluer">Telegram</a>
+    </div>
+  </div>
+  <script src="java.js"></script>
+</body>
+</html>
