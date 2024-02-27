@@ -11,6 +11,7 @@ body {
 
 .container {
   max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
@@ -33,6 +34,7 @@ p {
 ul {
   list-style-type: none;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 li {
@@ -50,69 +52,6 @@ a:hover {
   text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
 }
 
-.contact {
-  margin-top: 20px;
-}
-
-.contact a {
-  display: block;
-  color: #00ffcc;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-
-.social-media {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.social-media a {
-  display: inline-block;
-  margin-right: 10px;
-  color: #00ffcc;
-  text-decoration: none;
-}
-
-
-.logo {
-  margin-bottom: 20px;
-}
-
-.logo img {
-  width: 200px;
-  height: auto;
-  margin: 0 auto;
-  filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.3));
-}
-
-/* تعديلات على الأحجام والانسجام لمكونات الصفحة */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.logo {
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
 .contact,
 .social-media {
   margin-bottom: 20px;
@@ -124,10 +63,16 @@ ul li {
   margin-bottom: 10px;
 }
 
+.logo {
+  margin-bottom: 20px;
+}
+
 .logo img {
   width: 100px;
   height: auto;
   border-radius: 50%;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.3));
 }
 
 .social-media a {
@@ -139,8 +84,8 @@ ul li a {
 }
 
 .dialog-box {
- background-color: rgba(0, 123, 255, 0.5);
- border-radius: 5px;
- padding: 10px;
- margin-bottom: 10px;
- }
+  background-color: rgba(0, 123, 255, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
