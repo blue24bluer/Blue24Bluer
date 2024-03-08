@@ -89,3 +89,20 @@ ul li a {
   padding: 10px;
   margin-bottom: 10px;
 }
+.dialog-box1 {
+  background-color: rgba(0,0,0, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.dialog-box2 {
+  background-color: rgba(255,0,0, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}.dialog-box3 {
+  background-color: rgba(150,0,150, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
